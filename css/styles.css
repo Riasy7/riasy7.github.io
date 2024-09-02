@@ -89,7 +89,7 @@ a:hover {
   }
   
   .cta-btn:hover {
-    box-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    box-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.1); 
   }
   
   @media (max-width: 37.5em) {
@@ -102,7 +102,7 @@ a:hover {
     content: "";
     display: block;
     position: absolute;
-    background-image: linear-gradient(135deg, #272341 0%, #272341 100%); /* Darker color */
+    background-image: linear-gradient(135deg, #272341 0%, #272341 100%); 
     width: 0px;
     height: 100%;
     left: 0;
@@ -141,9 +141,9 @@ a:hover {
     color: #041029; 
   }
   
-  /* Specific adjustments for other buttons */
+ 
   .cta-btn--hero {
-    color: #272341; /* Dark blue */
+    color: #272341; 
     -webkit-text-fill-color: #272341;
     border: 2px solid transparent;
   }
@@ -745,7 +745,7 @@ section .row span {
     }
   }
   
-  /* Header CSS */
+  
   #header {
     background-color: #fff;
     padding: 1rem 0;
@@ -761,7 +761,7 @@ section .row span {
   }
   
   .header-logo {
-    padding-left: 2rem; /* Adjust as needed */
+    padding-left: 2rem; 
   }
   
   .header-logo a {
@@ -776,7 +776,7 @@ section .row span {
   }
   
   .header-nav {
-    padding-right: 2rem; /* Adjust as needed */
+    padding-right: 2rem; 
   }
   
   .header-nav ul {
@@ -833,20 +833,20 @@ section .row span {
     color: white;
     font-size: 2.2rem;
     text-align: center;
-    padding: 2rem 20%; /* Add padding to the left and right */
+    padding: 2rem 20%; 
 }
 
-/* "Let's Connect" button styles */
+
 .cta-btn--connect {
     display: inline-block;
     position: relative;
     padding: 1rem 2rem;
-    font-size: 2.1rem; /* Slightly increase button font size */
+    font-size: 2.1rem; 
     font-weight: bold;
     line-height: 1;
     z-index: 1;
     overflow: hidden;
-    border-radius: 3px; /* Square with slight rounding */
+    border-radius: 3px; 
     color: #fff;
     border: 2px solid #fff;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
@@ -882,39 +882,38 @@ section .row span {
     width: 100%;
   }
 
-/* About Section Styles */
 .about-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Adjust gap between items for compactness */
+  gap: 2rem; 
 }
 
 .about-item {
   display: flex;
   align-items: center;
-  gap: 2rem; /* Adjust gap between image and text */
+  gap: 2rem; 
   opacity: 0;
-  transform: translateX(-100px); /* Initial state for left animation */
-  transition: all 1s ease-in-out; /* Smooth transition */
+  transform: translateX(-100px); 
+  transition: all 1s ease-in-out;
 }
 
 .about-item.visible {
   opacity: 1;
-  transform: translateX(0); /* Final state for left animation */
+  transform: translateX(0); 
 }
 
 .about-item:nth-child(even) {
-  flex-direction: row-reverse; /* Reverse the flex direction for even items */
-  transform: translateX(100px); /* Initial state for right animation */
+  flex-direction: row-reverse; 
+  transform: translateX(100px); 
 }
 
 .about-item:nth-child(even).visible {
   opacity: 1;
-  transform: translateX(0); /* Final state for right animation */
+  transform: translateX(0);
 }
 
 .about-item__image img {
-  width: 200px; /* Increase image size */
+  width: 200px; 
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
@@ -922,14 +921,14 @@ section .row span {
 
 .about-item__info {
   flex: 1;
-  max-width: 60%; /* Constrain the text width */
-  text-align: left; /* Align text to the left */
+  max-width: 60%; 
+  text-align: left; 
 }
 
 .about-item__info-text {
-  font-size: 2rem; /* Increase text size */
+  font-size: 2rem;
   line-height: 1.5;
-  margin: 0 0 1rem 0; /* Add margin to space out paragraphs */
+  margin: 0 0 1rem 0; 
 }
 
 .about-item__cta {
@@ -940,7 +939,7 @@ section .row span {
 
 .cta-btn--resume {
   padding: 1rem 2rem;
-  font-size: 1.6rem; /* Slightly increase button font size */
+  font-size: 1.6rem; 
   color: #fff;
   background-color: #5b86e5;
   border: 2px solid #fff;
@@ -958,21 +957,21 @@ section .row span {
   .about-item {
     flex-direction: column;
     text-align: center;
-    transform: translateX(-100px); /* Initial state for mobile */
+    transform: translateX(-100px); 
   }
 
   .about-item.visible {
-    transform: translateX(0); /* Final state for mobile */
+    transform: translateX(0); 
   }
 
   .about-item:nth-child(even) {
-    flex-direction: column; /* Reset the direction for mobile view */
-    transform: translateX(-100px); /* Initial state for mobile */
+    flex-direction: column; 
+    transform: translateX(-100px); 
   }
 
   .about-item__info {
-    max-width: 100%; /* Remove width limit for mobile view */
-    text-align: center; /* Center text for mobile view */
+    max-width: 100%; 
+    text-align: center;
   }
 }
 .project-item {
@@ -980,26 +979,26 @@ section .row span {
   align-items: center;
   gap: 2rem;
   opacity: 0;
-  transform: translateY(100px); /* Initial state for animation */
-  transition: all 1s ease-in-out; /* Smooth transition */
+  transform: translateY(100px); 
+  transition: all 1s ease-in-out; 
 }
 
 .project-item.visible {
   opacity: 1;
-  transform: translateY(0); /* Final state for animation */
+  transform: translateY(0); 
 }
 
 .project-item:nth-child(even) {
-  flex-direction: row-reverse; /* Reverse the flex direction for even items */
+  flex-direction: row-reverse; 
 }
 
 .project-item__image img {
   border-radius: 8px;
   box-shadow: 8px 8px 9px 7px rgba(174, 174, 192, 0.4), -5px -5px 15px 7px #fff;
 }
-/* Base Header Styles */
+
 .header-logo {
-  float: left; /* Align the logo to the left */
+  float: left; 
 }
 
 .header-logo a {
@@ -1008,7 +1007,7 @@ section .row span {
   color: #333;
 }
 
-/* Hide the full name on mobile, show AS instead */
+
 @media (max-width: 768px) {
   .header-logo a::before {
     content: "AS";
@@ -1018,7 +1017,6 @@ section .row span {
     display: none;
   }
 
-  /* Position the mobile menu icon on the top right */
   .mobile-menu-icon {
     display: block;
     font-size: 2.5rem;
@@ -1029,20 +1027,20 @@ section .row span {
   }
 
   .header-nav {
-    display: none; /* Hide the navigation links by default on mobile */
+    display: none; 
   }
 
-  /* When the menu is open, display the nav links */
+ 
   .header-nav.open {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px; /* Adjust based on your header height */
+    top: 50px; 
     right: 0;
     background: white;
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0; /* Remove extra padding */
+    padding: 0; 
   }
 
   .header-nav ul {
@@ -1050,13 +1048,13 @@ section .row span {
     width: 100%;
     text-align: center;
     margin: 0;
-    padding: 0; /* Remove any default padding */
+    padding: 0; 
   }
 
   .header-nav ul li {
-    margin: 0; /* Remove extra margin between items */
-    padding: 1rem 0; /* Add padding for even spacing */
-    border-bottom: 1px solid #eaeaea; /* Optional: Add a divider between items */
+    margin: 0; 
+    padding: 1rem 0; /
+    border-bottom: 1px solid #eaeaea; 
   }
 
   .header-nav ul li a {
@@ -1064,25 +1062,24 @@ section .row span {
     text-decoration: none;
     color: #333;
     display: block;
-    width: 100%; /* Make the link take up the full width */
+    width: 100%; 
   }
 }
 
-/* Styles for Desktop and Larger Screens */
+
 @media (min-width: 769px) {
   .mobile-menu-icon {
-    display: none; /* Hide the mobile menu icon on larger screens */
+    display: none; 
   }
 
   .header-nav ul {
     display: flex;
-    gap: 2rem; /* Adjust spacing between menu items */
+    gap: 2rem; 
   }
 }
 
 
 
-/* About Me Section Adjustments for Mobile */
 @media (max-width: 768px) {
   .about-item {
     flex-direction: column;
@@ -1104,7 +1101,6 @@ section .row span {
   }
 }
 
-/* Footer Adjustments for Mobile */
 @media (max-width: 768px) {
   .footer-text {
     font-size: 1.6rem;
