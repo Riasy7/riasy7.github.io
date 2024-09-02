@@ -31,21 +31,26 @@
 
 <body>
 
-  <!-- Header -->
-  <header id="header">
-    <div class="header-logo">
-      <a href="#hero">Ahmad Saadawi</a>
-    </div>
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="">Tutorials</a></li>
-        <li><a href="#footer">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- End of Header -->
+<header id="header">
+  <div class="header-logo">
+    <a href="#hero"><span>Ahmad Saadawi</span></a> <!-- Full name displayed here, will change to "AS" on mobile -->
+  </div>
+  
+  <!-- Mobile Menu Icon (Hamburger Icon) -->
+  <div class="mobile-menu-icon">
+    &#9776; <!-- Unicode for the hamburger menu icon -->
+  </div>
+
+  <nav class="header-nav">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#tutorials">Tutorials</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <!-- Landing div -->
   <div id="hero">
@@ -385,6 +390,16 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear()
   </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.querySelector('.mobile-menu-icon');
+    const nav = document.querySelector('.header-nav');
+
+    menuIcon.addEventListener('click', function () {
+      nav.classList.toggle('open');
+    });
+  });
+</script>
   <!-- End of Scripts -->
 
 </body>
