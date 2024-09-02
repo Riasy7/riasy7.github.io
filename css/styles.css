@@ -998,6 +998,10 @@ section .row span {
   box-shadow: 8px 8px 9px 7px rgba(174, 174, 192, 0.4), -5px -5px 15px 7px #fff;
 }
 /* Base Header Styles */
+.header-logo {
+  float: left; /* Align the logo to the left */
+}
+
 .header-logo a {
   font-size: 2rem;
   text-decoration: none;
@@ -1006,13 +1010,6 @@ section .row span {
 
 /* Hide the full name on mobile, show AS instead */
 @media (max-width: 768px) {
-  .header-logo a {
-    content: "AS";
-    font-size: 2rem;
-    text-decoration: none;
-    color: #333;
-  }
-
   .header-logo a::before {
     content: "AS";
   }
@@ -1021,14 +1018,18 @@ section .row span {
     display: none;
   }
 
-  .header-nav {
-    display: none; /* Hide the navigation links by default on mobile */
-  }
-
+  /* Position the mobile menu icon on the top right */
   .mobile-menu-icon {
-    display: block; /* Show the mobile menu icon */
+    display: block;
     font-size: 2.5rem;
     cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .header-nav {
+    display: none; /* Hide the navigation links by default on mobile */
   }
 
   /* When the menu is open, display the nav links */
@@ -1036,11 +1037,12 @@ section .row span {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 70px; /* Adjust based on your header height */
+    top: 50px; /* Adjust based on your header height */
     right: 0;
     background: white;
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0; /* Remove extra padding */
   }
 
   .header-nav ul {
@@ -1048,18 +1050,21 @@ section .row span {
     width: 100%;
     text-align: center;
     margin: 0;
+    padding: 0; /* Remove any default padding */
   }
 
   .header-nav ul li {
-    margin: 1rem 0;
+    margin: 0; /* Remove extra margin between items */
+    padding: 1rem 0; /* Add padding for even spacing */
+    border-bottom: 1px solid #eaeaea; /* Optional: Add a divider between items */
   }
 
   .header-nav ul li a {
     font-size: 1.6rem;
-    padding: 1rem;
-    display: block;
     text-decoration: none;
     color: #333;
+    display: block;
+    width: 100%; /* Make the link take up the full width */
   }
 }
 
@@ -1068,7 +1073,13 @@ section .row span {
   .mobile-menu-icon {
     display: none; /* Hide the mobile menu icon on larger screens */
   }
+
+  .header-nav ul {
+    display: flex;
+    gap: 2rem; /* Adjust spacing between menu items */
+  }
 }
+
 
 
 /* About Me Section Adjustments for Mobile */
