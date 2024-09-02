@@ -75,7 +75,7 @@ a:hover {
   }
 }
 
-/* Base CTA button styles */
+
 .cta-btn {
     display: inline-block;
     position: relative;
@@ -84,7 +84,7 @@ a:hover {
     line-height: 1;
     z-index: 1;
     overflow: hidden;
-    border-radius: 50px; /* Make it a circle */
+    border-radius: 50px; 
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
   }
   
@@ -119,26 +119,26 @@ a:hover {
     }
   }
   
-  /* "See Live" button styles */
+  
   .cta-btn--projects {
-    color: #272341; /* Dark blue color */
-    border-radius: 50px; /* Make it a circle */
-    background-color: transparent; /* No background color */
-    border: none; /* No border */
+    color: #272341; 
+    border-radius: 50px; 
+    background-color: transparent; 
+    border: none; 
   }
   
   .cta-btn--projects:hover {
-    color: #fff; /* Change text color to white on hover */
-    background-color: #041029; /* Dark background on hover */
+    color: #fff;
+    background-color: #041029; 
   }
   
-  /* "Source Code" button styles */
+  
   .cta-btn--source {
-    color: #272341; /* Dark blue color */
+    color: #272341; 
   }
   
   .cta-btn--source:hover {
-    color: #041029; /* Slightly darker blue on hover */
+    color: #041029; 
   }
   
   /* Specific adjustments for other buttons */
