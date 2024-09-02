@@ -998,7 +998,8 @@ section .row span {
 }
 
 .header-logo {
-  float: left; 
+  float: left;
+  position: relative;
 }
 
 .header-logo a {
@@ -1006,7 +1007,6 @@ section .row span {
   text-decoration: none;
   color: #333;
 }
-
 
 @media (max-width: 768px) {
   .header-logo a::before {
@@ -1022,25 +1022,25 @@ section .row span {
     font-size: 2.5rem;
     cursor: pointer;
     position: absolute;
-    top: 15px;
+    top: 50%;
     right: 15px;
+    transform: translateY(-50%);
   }
 
   .header-nav {
-    display: none; 
+    display: none;
   }
 
- 
   .header-nav.open {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px; 
+    top: 50px;
     right: 0;
     background: white;
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0; 
+    padding: 0;
   }
 
   .header-nav ul {
@@ -1048,13 +1048,13 @@ section .row span {
     width: 100%;
     text-align: center;
     margin: 0;
-    padding: 0; 
+    padding: 0;
   }
 
   .header-nav ul li {
-    margin: 0; 
-    padding: 1rem 0; /
-    border-bottom: 1px solid #eaeaea; 
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eaeaea;
   }
 
   .header-nav ul li a {
@@ -1062,21 +1062,21 @@ section .row span {
     text-decoration: none;
     color: #333;
     display: block;
-    width: 100%; 
+    width: 100%;
   }
 }
 
-
 @media (min-width: 769px) {
   .mobile-menu-icon {
-    display: none; 
+    display: none;
   }
 
   .header-nav ul {
     display: flex;
-    gap: 2rem; 
+    gap: 2rem;
   }
 }
+
 
 
 
